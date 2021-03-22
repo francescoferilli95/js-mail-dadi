@@ -10,7 +10,7 @@ console.log('Hello Console!');
 
 // CREATING ARRAY OF KNOWN EMAIL LIST
 
-/* var accounts = ['tizio.caio@gmail.com', 'davide.rossi@virgilio.it', 'andrea.sempronio.libero.it', 'francesco.ferilli@alice.it', 'randomuser.nonloso@gmail.com'];
+ var accounts = ['tizio.caio@gmail.com', 'davide.rossi@virgilio.it', 'andrea.sempronio.libero.it', 'francesco.ferilli@alice.it', 'randomuser.nonloso@gmail.com'];
 // console.log(accounts);
 // console.log(accounts.length);
 
@@ -36,12 +36,14 @@ for (var i = 0; i < accounts.length; i++) {
 }
 
     if (userEmailFound) {
-        console.log('Welcome ' + accounts[i] + ' you can Log In!');
+        // console.log('Welcome ' + accounts[i] + ' you can now Log In!');
+        document.getElementById('email-result').innerHTML = 'Welcome ' + accounts[i] + ' you can now Log In!';
     } else {
-        console.log('Authentication Error, please register your Email before trying to Log In.');   
+        // console.log('Authentication Error, please register your Email before trying to Log In.');  
+        document.getElementById('email-result').innerHTML = 'Authentication Error, please register your Email before trying to Log In';
     }
     
-*/  
+
 
 
 
@@ -56,7 +58,7 @@ for (var i = 0; i < accounts.length; i++) {
 
 // GENERATE RANDOM NUMBER BETWEEN 1 AND 6 FOR THE PLAYER AND FOR THE COMPUTER 
 
-var randomPlayerNumber = Math.floor(Math.random() * 7 ) + 1;
+/* var randomPlayerNumber = Math.floor(Math.random() * 7 ) + 1;
 console.log('This is your Random Number Dear Player: ' + parseInt(randomPlayerNumber) );
 
 var randomComputerNumber = Math.floor(Math.random() * 7 ) + 1;
@@ -71,3 +73,4 @@ if (randomPlayerNumber > randomComputerNumber) {
 } else {
     console.log('COMPUTER WON!');
 }
+*/

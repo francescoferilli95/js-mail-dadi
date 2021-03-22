@@ -48,6 +48,7 @@ for (var i = 0; i < accounts.length; i++) {
 
 
 
+
 /**
  * GIOCO DEI DADI TO DO LIST:
  *  1. GENERATE RANDOM NUMBER BETWEEN 1 AND 6 FOR THE PLAYER.
@@ -61,10 +62,10 @@ for (var i = 0; i < accounts.length; i++) {
 
 
 var randomPlayerNumber = Math.floor(Math.random() * 7 ) + 1;
-console.log('This is your Random Number Dear Player: ' + parseInt(randomPlayerNumber) );
+// console.log('This is your Random Number Dear Player: ' + parseInt(randomPlayerNumber) );
 
 var randomComputerNumber = Math.floor(Math.random() * 7 ) + 1;
-console.log('This is Computer\'s Random Number: ' + parseInt(randomComputerNumber) );
+// console.log('This is Computer\'s Random Number: ' + parseInt(randomComputerNumber) );
 
 // DETERMINE THE WINNER BASED TO THE HIGHER RANDOM NUMBER
 

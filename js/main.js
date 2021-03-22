@@ -61,10 +61,10 @@ for (var i = 0; i < accounts.length; i++) {
 // GENERATE RANDOM NUMBER BETWEEN 1 AND 6 FOR THE PLAYER AND FOR THE COMPUTER 
 
 
-var randomPlayerNumber = Math.floor(Math.random() * 7 ) + 1;
+var randomPlayerNumber = Math.floor(Math.random() * 6 ) + 1;
 // console.log('This is your Random Number Dear Player: ' + parseInt(randomPlayerNumber) );
 
-var randomComputerNumber = Math.floor(Math.random() * 7 ) + 1;
+var randomComputerNumber = Math.floor(Math.random() * 6 ) + 1;
 // console.log('This is Computer\'s Random Number: ' + parseInt(randomComputerNumber) );
 
 // DETERMINE THE WINNER BASED TO THE HIGHER RANDOM NUMBER

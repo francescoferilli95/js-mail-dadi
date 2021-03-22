@@ -10,7 +10,7 @@ console.log('Hello Console!');
 
 // CREATING ARRAY OF KNOWN EMAIL LIST
 
-var accounts = ['tizio.caio@gmail.com', 'davide.rossi@virgilio.it', 'andrea.sempronio.libero.it', 'francesco.ferilli@alice.it', 'randomuser.nonloso@gmail.com'];
+/* var accounts = ['tizio.caio@gmail.com', 'davide.rossi@virgilio.it', 'andrea.sempronio.libero.it', 'francesco.ferilli@alice.it', 'randomuser.nonloso@gmail.com'];
 // console.log(accounts);
 // console.log(accounts.length);
 
@@ -41,15 +41,7 @@ for (var i = 0; i < accounts.length; i++) {
         console.log('Authentication Error, please register your Email before trying to Log In.');   
     }
     
-    
-
-
-
-
-
-
-
-
+*/  
 
 
 
@@ -57,9 +49,25 @@ for (var i = 0; i < accounts.length; i++) {
  * GIOCO DEI DADI TO DO LIST:
  *  1. GENERATE RANDOM NUMBER BETWEEN 1 AND 6 FOR THE PLAYER.
  *  2. GENERATE RANDOM NUMBER BETWEEN 1 AND 6 FOR THE COMPUTER.
- *  3. DETERMINE THE WINNER BASED TO HIGHER RANDOM NUMBER.
+ *  3. DETERMINE THE WINNER BASED TO THE HIGHER RANDOM NUMBER.
  *  4. OUTPUT OF THE RESULT OF THE GAME.
  * 
  */
 
+// GENERATE RANDOM NUMBER BETWEEN 1 AND 6 FOR THE PLAYER AND FOR THE COMPUTER 
 
+var randomPlayerNumber = Math.floor(Math.random() * 7 ) + 1;
+console.log('This is your Random Number Dear Player: ' + parseInt(randomPlayerNumber) );
+
+var randomComputerNumber = Math.floor(Math.random() * 7 ) + 1;
+console.log('This is Computer\'s Random Number: ' + parseInt(randomComputerNumber) );
+
+// DETERMINE THE WINNER BASED TO THE HIGHER RANDOM NUMBER
+
+if (randomPlayerNumber > randomComputerNumber) {
+    console.log('PLAYER WON!');
+} else if (randomPlayerNumber == randomComputerNumber) {
+    console.log('NO ONE WINS THIS ROUND!');
+} else {
+    console.log('COMPUTER WON!');
+}

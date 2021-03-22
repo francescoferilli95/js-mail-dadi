@@ -24,12 +24,24 @@ body {
     color: #f2ec18;
 }
 
-.title {
-    padding-bottom: 50px;
+.title-email {
+    margin-bottom: 50px;
 }
 
 #email-result {
     padding: 30px;
+    margin-bottom: 35px;
+    border-radius: 15px;
+    background: #042f33;
+}
+
+.title-dadi {
+    margin-bottom: 50px;
+}
+
+#dadi-result {
+    padding: 30px;
+    margin-bottom: 20px;
     border-radius: 15px;
     background: #042f33;
 }

@@ -10,7 +10,7 @@ console.log('Hello Console!');
 
 // CREATING ARRAY OF KNOWN EMAIL LIST
 
- var accounts = ['tizio.caio@gmail.com', 'davide.rossi@virgilio.it', 'andrea.sempronio.libero.it', 'francesco.ferilli@alice.it', 'randomuser.nonloso@gmail.com'];
+/* var accounts = ['tizio.caio@gmail.com', 'davide.rossi@virgilio.it', 'andrea.sempronio.libero.it', 'francesco.ferilli@alice.it', 'randomuser.nonloso@gmail.com'];
 // console.log(accounts);
 // console.log(accounts.length);
 
@@ -42,7 +42,7 @@ for (var i = 0; i < accounts.length; i++) {
         // console.log('Authentication Error, please register your Email before trying to Log In.');  
         document.getElementById('email-result').innerHTML = 'Authentication Error, please register your Email before trying to Log In';
     }
-    
+*/
 
 
 
@@ -58,7 +58,7 @@ for (var i = 0; i < accounts.length; i++) {
 
 // GENERATE RANDOM NUMBER BETWEEN 1 AND 6 FOR THE PLAYER AND FOR THE COMPUTER 
 
-/* var randomPlayerNumber = Math.floor(Math.random() * 7 ) + 1;
+ var randomPlayerNumber = Math.floor(Math.random() * 7 ) + 1;
 console.log('This is your Random Number Dear Player: ' + parseInt(randomPlayerNumber) );
 
 var randomComputerNumber = Math.floor(Math.random() * 7 ) + 1;
@@ -67,10 +67,12 @@ console.log('This is Computer\'s Random Number: ' + parseInt(randomComputerNumbe
 // DETERMINE THE WINNER BASED TO THE HIGHER RANDOM NUMBER
 
 if (randomPlayerNumber > randomComputerNumber) {
-    console.log('PLAYER WON!');
+    // console.log('PLAYER WON!');
+    document.getElementById('dadi-result').innerHTML = 'Player Number is: ' + randomPlayerNumber + ', ' + 'Computer Number is: ' + randomComputerNumber + '. ' + 'The Winner is...The Player!!!';
 } else if (randomPlayerNumber == randomComputerNumber) {
-    console.log('NO ONE WINS THIS ROUND!');
+    // console.log('NO ONE WINS THIS ROUND!');
+    document.getElementById('dadi-result').innerHTML = 'Player Number is: ' + randomPlayerNumber + ', ' + 'Computer Number is: ' + randomComputerNumber + '. ' + 'No one wins this round..!';
 } else {
-    console.log('COMPUTER WON!');
+    // console.log('COMPUTER WON!');
+    document.getElementById('dadi-result').innerHTML = 'Player Number is: ' + randomPlayerNumber + ', ' + 'Computer Number is: ' + randomComputerNumber + '. ' + 'The Winner is...The Computer!!!';
 }
-*/
